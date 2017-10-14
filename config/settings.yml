@@ -9,6 +9,7 @@ plugins:
     choices:
       - Microsoft
       - Google
+      - Deepl
   translator_azure_subscription_key:
     default: ''
   translator_google_api_key:
