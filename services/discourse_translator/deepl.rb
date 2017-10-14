@@ -6,7 +6,7 @@ module DiscourseTranslator
     TRANSLATE_URI = "https://www.deepl.com/jsonrpc".freeze
 
     SUPPORTED_LANG = {
-      auto: 'auto'
+      auto: 'auto',
       en: 'EN',
       de: 'DE',
       es: 'ES',
