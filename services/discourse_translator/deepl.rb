@@ -15,6 +15,10 @@ module DiscourseTranslator
       pl_PL: 'PL',
     }
 
+    def self.detect(post)
+      'auto'
+    end
+
     def self.translate(post)
       translated_text = from_custom_fields(post) do
         body = {
