@@ -34,7 +34,7 @@ module DiscourseTranslator
           },
         }
 
-        res = result(TRANSLATE_URI, body, default_headers.merge('Content-Type' => 'application/json'))
+        res = result(TRANSLATE_URI, body, { 'Content-Type' => "application/json" })
 
         # TODO Check if exists, just testing
         res['result']['translations'][0]['beams'][0]['postprocessed_sentence']
