@@ -58,7 +58,6 @@ module DiscourseTranslator
       response_body = response.body
       
       response_body
-      end
     end
   end
 end
