@@ -55,7 +55,7 @@ module DiscourseTranslator
     private
 
     def self.locale
-      SUPPORTED_LANG[I18n.locale] || (raise I18n.t("translator.not_supported"))
+      'EN'
     end
 
     def self.post(uri, body, headers = {})
