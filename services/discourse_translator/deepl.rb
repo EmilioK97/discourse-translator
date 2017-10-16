@@ -20,6 +20,10 @@ module DiscourseTranslator
       'auto'
     end
 
+    def self.translate_supported?(source, target)
+      true
+    end
+
     def self.translate(post)
       translated_text = from_custom_fields(post) do
         body = {
