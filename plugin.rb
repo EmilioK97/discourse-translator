@@ -29,7 +29,7 @@ after_initialize do
 
     def translate
       raise PluginDisabled if !SiteSetting.translator_enabled
-      RateLimiter.new(current_user, "translate_post", 100, 1.minute).performed! unless current_user.staff?
+      RateLimiter.new(current_user, "translate_post", 3, 1.minute).performed! unless current_user.staff?
 
       params.require(:post_id)
       post = Post.find_by(id: params[:post_id])
