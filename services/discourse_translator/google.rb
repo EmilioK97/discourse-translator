@@ -44,7 +44,7 @@ module DiscourseTranslator
     end
 
     def self.access_token
-      SiteSetting.translator_google_api_key || (raise TranslatorError.new("NotFound: Google Api Key not set."))
+      'TEST'
     end
 
     def self.detect(post)
